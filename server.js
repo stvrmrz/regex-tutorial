@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
+require('dotenv').config();  // Load environment variables from .env file
 
 // Initialize the Express app
 const app = express();
@@ -14,8 +15,8 @@ app.use(express.json());
 // Use the API routes
 app.use('/api', routes);
 
-// Connect to MongoDB
-const connectionString = 'mongodb+srv://<stevearamirez@gmail.com>:<D@venbono182189>@cluster0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; // Replace this with your actual connection string
+// Get the connection string from environment variables
+const connectionString = process.env.MONGODB_URI;
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
