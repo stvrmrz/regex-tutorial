@@ -18,6 +18,9 @@ app.use('/api', routes);
 // Get the connection string from environment variables
 const connectionString = process.env.MONGODB_URI;
 
+// Log the connection string
+console.log('MongoDB Connection String:', connectionString);
+
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
