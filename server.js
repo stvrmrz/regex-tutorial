@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/api', routes);
 
 // Connect to MongoDB
-const connectionString = 'mongodb+srv://<stevearamirez@gmail.com>:<D@venbono182189>@cluster09659.cbusifo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster09659'; // Replace this with your actual connection string
+const connectionString = 'mongodb+srv://<stevearamirez@gmail.com>:<D@venbono182189>@cluster0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; // Replace this with your actual connection string
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
