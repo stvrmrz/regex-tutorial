@@ -21,14 +21,9 @@ const connectionString = process.env.MONGODB_URI;
 // Log the connection string
 console.log('MongoDB Connection String:', connectionString);
 
-mongoose.connect(connectionString, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-mongoose.connection.once('open', () => {
-  console.log('Connected to MongoDB Atlas');
-});
+mongoose.connect(connectionString)
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch(err => console.error('Error connecting to MongoDB Atlas:', err));
 
 // Start the server
 app.listen(PORT, () => {
