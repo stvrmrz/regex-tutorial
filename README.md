@@ -12,7 +12,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#link-to-deployed-application">Link to Deployed Application</a></li>
+    <li><a href="#link-to-walkthrough">Link to Walkthrough</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -53,7 +53,7 @@ reccomended to install Visual Studio code as well.
    ```
 
 <!-- USAGE EXAMPLES -->
-## Link to Deployed Application
+## Link to Walkthrough
 
 _Here is a link to my [Walthrough](https://app.screencastify.com/v3/watch/rUtow86um6LZtWR5j2Tu)_
 
